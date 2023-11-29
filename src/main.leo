@@ -26,7 +26,7 @@ program mapping_encapsulation.aleo {
 
     transition assert_with_default_example(
         public key: u64, public value: u32, default_value: u32
-    ) { // Setter
+    ) { 
         return then finalize(key, value, default_value);
     }
     finalize assert_with_default_example(
