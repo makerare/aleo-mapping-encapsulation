@@ -9,7 +9,7 @@ program mapping_encapsulation.aleo {
         example.set(key, value);
     }
 
-    transition remove_example(public key: u64) { // Setter
+    transition remove_example(public key: u64) {
         return then finalize(key);
     } 
     finalize remove_example(public key: u64) {
