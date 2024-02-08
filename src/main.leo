@@ -36,7 +36,7 @@ program mapping_encapsulation.aleo {
         assert_eq(value, stored_value);
     }
 
-    transition assert_exists_example(public key: u64, public exists: bool) { // Setter
+    transition assert_exists_example(public key: u64, public exists: bool) { 
         return then finalize(key, exists);
     } 
     finalize assert_exists_example(public key: u64, public exists: bool) {
